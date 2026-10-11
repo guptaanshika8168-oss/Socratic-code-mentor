@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Socratic Code Mentor",
+  "version": "1.0.0",
+  "description": "Progressive DSA hints while you practice.",
+  "permissions": ["sidePanel", "activeTab", "tabs"],
+  "host_permissions": ["http://127.0.0.1:8000/*", "http://localhost:8000/*"],
+  "action": {"default_title": "Open Socratic Code Mentor"},
+  "background": {"service_worker": "service-worker.js"},
+  "side_panel": {"default_path": "sidepanel.html"},
+  "content_scripts": [{"matches": ["https://leetcode.com/*", "https://www.hackerrank.com/*"], "js": ["content.js"], "run_at": "document_idle"}]
+}

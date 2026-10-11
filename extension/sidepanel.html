@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Socratic Code Mentor</title><link rel="stylesheet" href="styles.css"></head><body>
+<header><div class="eyebrow">DSA PRACTICE TOOL</div><h1>Socratic Code Mentor</h1><p>Work it out. One hint at a time.</p></header><main>
+<button id="importBtn" class="secondary import">Import from page</button><div id="status" class="status" role="status">Checking local backend…</div>
+<label for="problem">Problem</label><textarea id="problem" rows="5" placeholder="Problem statement (auto-import or paste)"></textarea>
+<div class="grid"><div><label for="language">Language</label><select id="language"><option>Python</option><option>JavaScript</option><option>Java</option><option>C++</option><option>C</option><option>C#</option><option>Go</option></select></div><div><label for="level">Hint level</label><select id="level"><option value="1">1 · Concept</option><option value="2">2 · Approach</option><option value="3">3 · Debugging clue</option></select></div></div>
+<label for="code">Your code</label><textarea id="code" class="code" rows="9" spellcheck="false" placeholder="Paste your attempt if import cannot read the editor"></textarea>
+<div class="actions"><button id="askBtn">Get guidance</button><button id="clearBtn" class="secondary">Clear</button></div>
+<section id="result" class="result hidden" aria-live="polite"><div class="result-head"><span>MENTOR NOTES</span><button id="copyBtn" class="text-button">Copy notes</button></div><div id="feedback"></div></section><footer>Local prototype · AI feedback can be wrong. Verify suggestions with tests.</footer></main><script src="sidepanel.js"></script></body></html>
